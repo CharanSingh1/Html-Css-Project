@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Responsive Admin Panel</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<input type="checkbox" id="toggle-sidebar">
+
+<div class="dashboard">
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <h2>Admin</h2>
+    <nav>
+      <a href="#">Dashboard</a>
+      <a href="#">Users</a>
+      <a href="#">Reports</a>
+      <a href="#">Settings</a>
+    </nav>
+  </aside>
+
+  <!-- Main Content -->
+  <main class="main">
+    <header class="topbar">
+      <label for="toggle-sidebar" class="menu-btn">☰</label>
+      <h1>Dashboard</h1>
+      <label for="modal-toggle" class="open-modal">+ New</label>
+    </header>
+
+    <!-- Stats Cards -->
+    <section class="stats">
+      <div class="card">
+        <h3>Users</h3>
+        <p>1,245</p>
+      </div>
+      <div class="card">
+        <h3>Revenue</h3>
+        <p>$18,920</p>
+      </div>
+      <div class="card">
+        <h3>Orders</h3>
+        <p>320</p>
+      </div>
+      <div class="card">
+        <h3>Growth</h3>
+        <p>+12%</p>
+      </div>
+    </section>
+
+    <!-- Table -->
+    <section class="table-section">
+      <h2>Recent Users</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Email</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John Doe</td>
+              <td>john@email.com</td>
+              <td class="active">Active</td>
+            </tr>
+            <tr>
+              <td>Jane Smith</td>
+              <td>jane@email.com</td>
+              <td class="pending">Pending</td>
+            </tr>
+            <tr>
+              <td>Mike Brown</td>
+              <td>mike@email.com</td>
+              <td class="inactive">Inactive</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </main>
+</div>
+
+<!-- Modal -->
+<input type="checkbox" id="modal-toggle">
+
+<div class="modal">
+  <div class="modal-content">
+    <h3>Create New Item</h3>
+    <p>This is a CSS-only modal.</p>
+    <label for="modal-toggle" class="close-modal">Close</label>
+  </div>
+</div>
+
+</body>
+</html>
