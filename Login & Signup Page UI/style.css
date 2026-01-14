@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+}
+
+.auth-card {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+}
+
+.auth-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 14px 12px;
+  border-radius: 8px;
+  border: 2px solid #ddd;
+  outline: none;
+  font-size: 16px;
+}
+
+.form-group label {
+  position: absolute;
+  top: 32%;
+  left: 12px;
+  color: #999;
+  font-size: 14px;
+  transform: translateY(-50%);
+  pointer-events: none;
+  transition: 0.3s ease;
+  background: #fff;
+  padding: 0 6px;
+}
+
+.form-group input:focus {
+  border-color: #667eea;
+}
+
+.form-group input:focus + label,
+.form-group input:valid + label {
+  top: -8px;
+  font-size: 12px;
+  color: #667eea;
+}
+
+/* Validation states */
+.form-group.error input {
+  border-color: #e74c3c;
+}
+
+.form-group.error small {
+  color: #e74c3c;
+  visibility: visible;
+}
+
+.form-group.success input {
+  border-color: #2ecc71;
+}
+
+.form-group small {
+  font-size: 12px;
+  visibility: hidden;
+  margin-top: 5px;
+  display: block;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  background: #667eea;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #5a6fdc;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.switch-text a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 600;
+}
