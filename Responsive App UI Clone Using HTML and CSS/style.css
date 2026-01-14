@@ -1,0 +1,87 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Layout */
+body {
+  background: #f5f6fa;
+  color: #333;
+}
+
+/* Header */
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  background: #4f46e5;
+  color: white;
+}
+
+.profile {
+  font-size: 1.5rem;
+}
+
+/* Content */
+.app-content {
+  padding: 20px;
+  display: grid;
+  gap: 15px;
+}
+
+/* Cards */
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.card h2 {
+  margin-bottom: 8px;
+}
+
+/* Bottom Navigation */
+.bottom-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px 0;
+  border-top: 1px solid #ddd;
+}
+
+.bottom-nav a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: #888;
+}
+
+.bottom-nav a.active {
+  color: #4f46e5;
+}
+
+/* Desktop View */
+@media (min-width: 768px) {
+  body {
+    max-width: 900px;
+    margin: auto;
+  }
+
+  .bottom-nav {
+    position: static;
+    border-top: none;
+    margin-top: 20px;
+  }
+
+  .app-content {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
